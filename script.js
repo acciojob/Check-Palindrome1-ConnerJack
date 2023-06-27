@@ -2,6 +2,7 @@
 
 function palindrome(str){
 	str = str.split(" ").join("")
+	str = str.toLowerCase()
 	let ans = ""
 	for (let index = str.length; index >= 0 ; index--) {
 		ans = ans + str.charAt(index)
